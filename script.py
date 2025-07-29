@@ -20,17 +20,17 @@ class script(object):
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
+<b>📢 Channel :</b> <a href='https://t.me/AgsModsOG'>AgsModsOG</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/ags_mods_bot'>ᴀɢꜱ ᴍᴏᴅꜱ</a>
 
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+<b>♻️ Bot Made By :</b> @AgsModsOG"""
 
     DONATE_TXT = """
 <b>🥲 Thanks For Showing Interest In Donation! ❤️</b>
 
 If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
 
-<b>🛍 UPI ID:</b> <code>madflixofficial@axl</code> 
+<b>🛍 UPI ID:</b> <code>akkumundro@okicici</code> 
 
 <b>📸 Send Screenshot After Donation To Activate Your Premium Plan </b> """
 
@@ -46,11 +46,21 @@ If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upt
 <b>⦿ /restart - Use This Command To Cancel All Process And Restart The Bot</b>"""
 
 
+    METADATA_TXT = """<b><u>🖼️  HOW TO SET CUSTOM METADATA</u></b>
+
+For Example :-
+
+<code>By @AgsModsOG</code>
+
+💬 For Any Help Contact @AgsModsOG
+"""
 
 
 
 
-# Jishu Developer 
+
+
+#  
 # Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Developer @JishuDeveloper
+# Telegram Channel @AgsModsOG
+# Developer @ᴀɢꜱ ᴍᴏᴅꜱ
