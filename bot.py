@@ -34,7 +34,7 @@ class Bot(Client):
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username
-        self.force_channel = Config.FORCE_SUB
+        self.force_channel = FORCE_SUB
 
         # Force Subscription Invite Link
         if self.force_channel:
