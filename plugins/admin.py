@@ -24,9 +24,9 @@ async def warn(c, m):
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
 async def buypremium(bot, message):
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🪙 Basic", callback_data="vip1"),
-        InlineKeyboardButton("⚡ Standard", callback_data="vip2")],
-        [InlineKeyboardButton("💎 Pro", callback_data="vip3")],
+        [InlineKeyboardButton("🥈 Silver Plan", callback_data="vip1"),
+        InlineKeyboardButton("🥇 Gold Plan", callback_data="vip2")],
+        [InlineKeyboardButton("💎 Diamond Plan", callback_data="vip3")],
         [InlineKeyboardButton("✖️ Cancel ✖️",callback_data = "cancel")]
         ])
         
@@ -65,10 +65,10 @@ async def vip1(bot,update):
     user_id = id[1].replace(" ", "")
     inlimit  = 21474836500
     uploadlimit(int(user_id),21474836500)
-    usertype(int(user_id),"🪙 Basic")
+    usertype(int(user_id),"🥈 Silver Plan")
     addpre(int(user_id))
     await update.message.edit("Added Successfully To Premium Upload Limit 20 GB")
-    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>🪙 Basic</b>. Check Your Plan Here /myplan")
+    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>🥈 Silver Plan</b>. Check Your Plan Here /myplan")
 
 
 
@@ -78,10 +78,10 @@ async def vip2(bot,update):
     user_id = id[1].replace(" ", "")
     inlimit = 53687091200
     uploadlimit(int(user_id), 53687091200)
-    usertype(int(user_id),"⚡ Standard")
+    usertype(int(user_id),"🥇 Gold Plan")
     addpre(int(user_id))
     await update.message.edit("Added Successfully To Premium Upload Limit 50 GB")
-    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>⚡ Standard</b>. Check Your Plan Here /myplan")
+    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>🥇 Gold Plan</b>. Check Your Plan Here /myplan")
 
 
 
@@ -91,10 +91,10 @@ async def vip3(bot,update):
     user_id = id[1].replace(" ", "")
     inlimit = 107374182400
     uploadlimit(int(user_id), 107374182400)
-    usertype(int(user_id),"💎 Pro")
+    usertype(int(user_id),"💎 Diamond Plan")
     addpre(int(user_id))
     await update.message.edit("Added Successfully To Premium Upload Limit 100 GB")
-    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>💎 Pro</b>. Check Your Plan Here /myplan")
+    await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYou Are Upgraded To <b>💎 Diamond Plan</b>. Check Your Plan Here /myplan")
 
 
 
@@ -135,7 +135,7 @@ async def dft(bot,update):
     user_id = id[1].replace(" ", "")
     inlimit = 2147483652
     uploadlimit(int(user_id), 2147483652)
-    usertype(int(user_id),"🆓 Free")
+    usertype(int(user_id),"💖 Free Plan")
     addpre(int(user_id))
     await update.message.edit("Daily Data Limit Has Been Reset Successfully.\n\nThis Account Has Default 2GB Remaining Capacity")
     await bot.send_message(user_id, f"Hey {update.from_user.mention} \n\nYour Daily Data Limit Has Been Reset Successfully. Check Your Plan Here /myplan\n\n<b>Contact Admin :</b> @MadflixOfficials")
