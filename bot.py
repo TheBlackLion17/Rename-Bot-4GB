@@ -3,7 +3,7 @@ import logging.config
 import asyncio
 from pyrogram import Client
 from aiohttp import web
-from config import Config
+from config import *
 from pyrogram.errors import FloodWait
 
 from plugins.web_support import web_server
@@ -21,9 +21,9 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             name="renamer",
-            api_id=Config.API_ID,
-            api_hash=Config.API_HASH,
-            bot_token=Config.BOT_TOKEN,
+            api_id=API_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
             workers=50,
             sleep_threshold=5,
             plugins={"root": "plugins"},
